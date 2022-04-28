@@ -20,7 +20,7 @@ func main() {
     fmt.Println(newArray)
     
     duplicates := []string{"cat", "dog", "bird", "cat"}
-    deduped = sf.Unique(duplicates)
+    deduped := sf.Unique(duplicates)
     fmt.Println(deduped)
 }
 ```
