@@ -18,5 +18,9 @@ func main() {
     newArray = sf.Map(newArray, func(item int) int { return item * 3 })
     newArray = sf.Filter(newArray, func(item int) bool { return item%2 == 0 })
     fmt.Println(newArray)
+    
+    duplicates := []string{"cat", "dog", "bird", "cat"}
+    deduped := sf.Unique(duplicates)
+    fmt.Println(deduped)
 }
 ```
